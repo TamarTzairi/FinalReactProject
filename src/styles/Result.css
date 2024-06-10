@@ -1,0 +1,86 @@
+/* .Result {
+    text-align: center;
+  }
+  
+  .members-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px; 
+    justify-items: center; 
+  }
+  
+  .member {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 150px;
+    text-align: center;
+  }
+  
+  .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border: 1px solid #000;
+    background: #fff;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  
+  .popup-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+   */
+
+
+   .Result {
+    text-align: center;
+  }
+  
+  .members-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 10px; /* Space between items */
+    justify-items: center; /* Center items horizontally */
+  }
+   
+  
+  .member {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 150px;
+    text-align: center;
+    transition: transform 0.3s ease, width 0.3s ease; /* Smooth transition */
+  }
+
+  
+  .member.expanded {
+    width: 300px;
+    transform: scale(1.1); /* Slight enlargement */
+    position: relative; /* Ensure it doesn't affect the layout */
+    z-index: 1; /* Bring it above other members */
+    background-color: #f0f0f0; /* Change background color when expanded */
+  }
+  
+  .arrow-button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .details-text {
+    display: none;
+  }
+  
+  .member.expanded .details-text {
+    display: block;
+    margin-top: 10px;
+  }
+
+  

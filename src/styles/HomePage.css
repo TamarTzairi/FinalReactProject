@@ -1,0 +1,10 @@
+
+.home-page{
+    margin: 0;
+    padding: 0;
+    /* background-image: url('/src/images/image1.jpg'); */
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+  }
